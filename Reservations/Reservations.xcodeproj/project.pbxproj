@@ -14,7 +14,7 @@
 		C5D96F8D2BD10244004D8940 /* ReservationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D96F8C2BD10244004D8940 /* ReservationsTests.swift */; };
 		C5D96F972BD10244004D8940 /* ReservationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D96F962BD10244004D8940 /* ReservationsUITests.swift */; };
 		C5D96F992BD10244004D8940 /* ReservationsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D96F982BD10244004D8940 /* ReservationsUITestsLaunchTests.swift */; };
-		C5D96FA62BD1123D004D8940 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D96FA52BD1123D004D8940 /* MyView.swift */; };
+		C5D96FAC2BD16717004D8940 /* ReservationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D96FAB2BD16717004D8940 /* ReservationForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,7 @@
 		C5D96F922BD10244004D8940 /* ReservationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReservationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5D96F962BD10244004D8940 /* ReservationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsUITests.swift; sourceTree = "<group>"; };
 		C5D96F982BD10244004D8940 /* ReservationsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C5D96FA52BD1123D004D8940 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		C5D96FAB2BD16717004D8940 /* ReservationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 			children = (
 				C5D96F7B2BD10243004D8940 /* ReservationsApp.swift */,
 				C5D96F7D2BD10243004D8940 /* ContentView.swift */,
-				C5D96FA52BD1123D004D8940 /* MyView.swift */,
+				C5D96FAB2BD16717004D8940 /* ReservationForm.swift */,
 				C5D96F7F2BD10244004D8940 /* Assets.xcassets */,
 				C5D96F812BD10244004D8940 /* Preview Content */,
 			);
@@ -260,7 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5D96FA62BD1123D004D8940 /* MyView.swift in Sources */,
+				C5D96FAC2BD16717004D8940 /* ReservationForm.swift in Sources */,
 				C5D96F7E2BD10243004D8940 /* ContentView.swift in Sources */,
 				C5D96F7C2BD10243004D8940 /* ReservationsApp.swift in Sources */,
 			);
