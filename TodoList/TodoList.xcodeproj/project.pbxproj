@@ -36,6 +36,7 @@
 		C5A3EFF02BD1971800FE887F /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A3EFEF2BD1971800FE887F /* RegisterViewModel.swift */; };
 		C5A3EFF22BD1972700FE887F /* ToDoListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A3EFF12BD1972700FE887F /* ToDoListItemViewModel.swift */; };
 		C5A3EFF42BD20A3100FE887F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A3EFF32BD20A3100FE887F /* HeaderView.swift */; };
+		C5A3EFF62BD217E300FE887F /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A3EFF52BD217E300FE887F /* TLButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		C5A3EFEF2BD1971800FE887F /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		C5A3EFF12BD1972700FE887F /* ToDoListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewModel.swift; sourceTree = "<group>"; };
 		C5A3EFF32BD20A3100FE887F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		C5A3EFF52BD217E300FE887F /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 				C5A3EFDD2BD1962000FE887F /* RegisterView.swift */,
 				C5A3EFDF2BD1965300FE887F /* ToDoListView.swift */,
 				C5A3EFF32BD20A3100FE887F /* HeaderView.swift */,
+				C5A3EFF52BD217E300FE887F /* TLButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				C5A3EFF02BD1971800FE887F /* RegisterViewModel.swift in Sources */,
 				C5A3EFD82BD195F300FE887F /* ToDoListItemView.swift in Sources */,
 				C5A3EFDE2BD1962000FE887F /* RegisterView.swift in Sources */,
+				C5A3EFF62BD217E300FE887F /* TLButton.swift in Sources */,
 				C5A3EFE22BD1969100FE887F /* User.swift in Sources */,
 				C5A3EFE82BD196DE00FE887F /* ProfileViewModel.swift in Sources */,
 				C5A3EFD62BD195DC00FE887F /* ProfileView.swift in Sources */,
