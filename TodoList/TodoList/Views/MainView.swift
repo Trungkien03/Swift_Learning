@@ -12,7 +12,6 @@ struct MainView: View {
         VStack {
             LoginView()
         }
-        .padding()
     }
 }
 

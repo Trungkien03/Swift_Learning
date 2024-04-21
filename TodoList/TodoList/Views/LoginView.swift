@@ -19,18 +19,22 @@ struct LoginView: View {
                     subtitleString: "Get Things Done",
                     angle: 15,
                     backgroundColor: Color.pink)
-                //Login Form
+                
+                
                 Form {
+                    if !viewModel.errorMessage.isEmpty {
+                        Text(viewModel.errorMessage)
+                            .foregroundStyle(Color.red)
+                    }
                     TextField("Email Address", text: $viewModel.email)
                         .autocorrectionDisabled()
                         .autocapitalization(.none)
                     SecureField("Password", text: $viewModel.password)
                         .autocorrectionDisabled()
                     TLButton(title: "Sign In", background: .blue, action: {
-                        // Attempt Sign In
+                        viewModel.login()
                     })
                 }
-                .frame(width: UIScreen.main.bounds.width * 1)
                 .offset(y: -100)
                 .padding()
                 
@@ -39,8 +43,6 @@ struct LoginView: View {
                     Text("New Around Here")
                     NavigationLink("Create An Account", destination: RegisterView())
                 }
-                .padding(.bottom, 50)
-                Spacer()
             }
         }
     }
