@@ -34,7 +34,7 @@ struct ToDoListView: View {
                             .tint(.red) // Set the background color
                         }
                 }
-                .listStyle(.insetGrouped)
+                .listStyle(.automatic)
             }
             .navigationTitle("To Do List")
             .toolbar(){
