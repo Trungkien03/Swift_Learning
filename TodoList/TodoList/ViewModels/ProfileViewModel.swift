@@ -7,6 +7,8 @@
 
 import Foundation
 
-class ProfileViewModel:ObservableObject {
-    
+class ProfileViewModel: ObservableObject {
+    init() {
+        
+    }
 }

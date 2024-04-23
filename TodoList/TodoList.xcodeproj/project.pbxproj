@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C5A3B8B22BD5636A00FD491F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A3B8B12BD5636A00FD491F /* Extensions.swift */; };
+		C5A3B8B42BD76C6500FD491F /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C5A3B8B32BD76C6500FD491F /* FirebaseFirestoreSwift */; };
 		C5A3EF9A2BD18E1300FE887F /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A3EF992BD18E1300FE887F /* TodoListApp.swift */; };
 		C5A3EF9C2BD18E1300FE887F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A3EF9B2BD18E1300FE887F /* MainView.swift */; };
 		C5A3EF9E2BD18E1400FE887F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A3EF9D2BD18E1400FE887F /* Assets.xcassets */; };
@@ -99,6 +100,7 @@
 				C5A3EFC82BD193D700FE887F /* FirebaseAnalytics in Frameworks */,
 				C5A3EFD02BD193D700FE887F /* FirebaseStorage in Frameworks */,
 				C5A3EFCA2BD193D700FE887F /* FirebaseAuth in Frameworks */,
+				C5A3B8B42BD76C6500FD491F /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +258,7 @@
 				C5A3EFCB2BD193D700FE887F /* FirebaseDatabase */,
 				C5A3EFCD2BD193D700FE887F /* FirebaseFirestore */,
 				C5A3EFCF2BD193D700FE887F /* FirebaseStorage */,
+				C5A3B8B32BD76C6500FD491F /* FirebaseFirestoreSwift */,
 			);
 			productName = TodoList;
 			productReference = C5A3EF962BD18E1300FE887F /* TodoList.app */;
@@ -731,6 +734,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C5A3B8B32BD76C6500FD491F /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5A3EFC32BD18E2800FE887F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
 		C5A3EFC72BD193D700FE887F /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C5A3EFC32BD18E2800FE887F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
