@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C59445662BD78CF700CF94A1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C59445652BD78CF700CF94A1 /* Launch Screen.storyboard */; };
+		C59445682BD78D2800CF94A1 /* ToDo List.png in Resources */ = {isa = PBXBuildFile; fileRef = C59445672BD78D2800CF94A1 /* ToDo List.png */; };
 		C5A3B8B22BD5636A00FD491F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A3B8B12BD5636A00FD491F /* Extensions.swift */; };
 		C5A3B8B42BD76C6500FD491F /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C5A3B8B32BD76C6500FD491F /* FirebaseFirestoreSwift */; };
 		C5A3EF9A2BD18E1300FE887F /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A3EF992BD18E1300FE887F /* TodoListApp.swift */; };
@@ -59,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C59445652BD78CF700CF94A1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C59445672BD78D2800CF94A1 /* ToDo List.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ToDo List.png"; sourceTree = "<group>"; };
 		C5A3B8B12BD5636A00FD491F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C5A3EF962BD18E1300FE887F /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A3EF992BD18E1300FE887F /* TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApp.swift; sourceTree = "<group>"; };
@@ -121,6 +125,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C59445622BD78BE900CF94A1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C59445672BD78D2800CF94A1 /* ToDo List.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		C5A3EF8D2BD18E1300FE887F = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +157,7 @@
 		C5A3EF982BD18E1300FE887F /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				C59445622BD78BE900CF94A1 /* Images */,
 				C5A3EFD42BD1948900FE887F /* Others */,
 				C5A3EFD32BD1946B00FE887F /* Models */,
 				C5A3EFD22BD1945400FE887F /* ViewModels */,
@@ -232,6 +245,7 @@
 				C5A3EFC42BD18E7000FE887F /* GoogleService-Info.plist */,
 				C5A3EF992BD18E1300FE887F /* TodoListApp.swift */,
 				C5A3B8B12BD5636A00FD491F /* Extensions.swift */,
+				C59445652BD78CF700CF94A1 /* Launch Screen.storyboard */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -353,6 +367,8 @@
 			files = (
 				C5A3EFA12BD18E1400FE887F /* Preview Assets.xcassets in Resources */,
 				C5A3EF9E2BD18E1400FE887F /* Assets.xcassets in Resources */,
+				C59445662BD78CF700CF94A1 /* Launch Screen.storyboard in Resources */,
+				C59445682BD78D2800CF94A1 /* ToDo List.png in Resources */,
 				C5A3EFC52BD18E7000FE887F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -567,6 +583,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -595,6 +612,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
