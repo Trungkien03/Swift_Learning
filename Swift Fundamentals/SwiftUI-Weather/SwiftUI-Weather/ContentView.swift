@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var isNight = false
+    
     var body: some View {
         ZStack {
-            BackgroundView()
-            VStack(spacing: 8){
+            BackgroundView(isNight: $isNight)
+            VStack(spacing: 20){
                 
                 TitleTodayView(location: "Ho Chi Minh City")
                 
-                TodayView(imageName: "cloud.sun.fill", temperature: 60)
+                TodayView(imageName: isNight ? "moon.stars.fill" :"cloud.sun.fill", temperature: 60)
                 
                 
                 HStack (spacing: 15) {
@@ -29,7 +32,9 @@ struct ContentView: View {
                 
                 Spacer()
                 
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(action: {
+                    isNight.toggle()
+                }, label: {
                     Text("Change Day Time")
                         .frame(width: 200, height: 50)
                         .background(.white)

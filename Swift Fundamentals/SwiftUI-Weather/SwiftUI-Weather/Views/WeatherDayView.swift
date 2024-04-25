@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct WeatherDayView: View {
+    
+    
     var dayOfWeek: String
     var imageName: String
     var temperature: Int

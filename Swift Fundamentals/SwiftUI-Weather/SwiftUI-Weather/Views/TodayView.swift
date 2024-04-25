@@ -18,7 +18,7 @@ struct TodayView: View {
                 .renderingMode(.original)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 200)
+                .frame(width: 200, height: 150)
             
             Text("\(temperature)°")
                 .font(.system(size: 70, weight: .medium))
