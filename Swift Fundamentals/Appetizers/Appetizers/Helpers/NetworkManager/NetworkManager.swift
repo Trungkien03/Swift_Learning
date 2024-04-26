@@ -39,10 +39,6 @@ final class NetworkManager {
                 return
             }
             
-            
-            print(url)
-            print(data)
-            
             do {
                 let decoder = JSONDecoder()
                 let decodeRepsonse = try decoder.decode(AppetizerResponse.self, from: data)
