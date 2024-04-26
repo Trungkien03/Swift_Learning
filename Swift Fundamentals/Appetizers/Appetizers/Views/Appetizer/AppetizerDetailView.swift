@@ -21,17 +21,9 @@ struct AppetizerDetailView: View {
             
             Spacer()
             
-            Button {
+            APButtonView(title: "$\(String(format: "%.2f", appetizer.price)) - Add to Order") {
                 print("Tapped")
-            } label: {
-                Text("$\(appetizer.price, specifier: "%.2f") - Add to Order")
-                    .fontWeight(.semibold)
-                    .frame(width: 250, height: 50)
-                    .background(Color.mainBrandPrimary)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
             }
-            .padding(.bottom, 40)
             
             
         }
