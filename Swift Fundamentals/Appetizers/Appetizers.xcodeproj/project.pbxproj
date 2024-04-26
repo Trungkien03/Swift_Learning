@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		C501CB662BDB755900FD62C5 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C501CB652BDB755900FD62C5 /* Color+Ext.swift */; };
 		C501CB682BDB7A7800FD62C5 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C501CB672BDB7A7800FD62C5 /* ImageLoader.swift */; };
+		C501CB6A2BDB88C100FD62C5 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C501CB692BDB88C100FD62C5 /* AppetizerDetailView.swift */; };
+		C501CB6C2BDB8E9F00FD62C5 /* ImageLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C501CB6B2BDB8E9F00FD62C5 /* ImageLoadView.swift */; };
+		C501CB6E2BDB90B600FD62C5 /* AppetizerDetailInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C501CB6D2BDB90B600FD62C5 /* AppetizerDetailInfoView.swift */; };
 		C561F2382BDB55AA00059248 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C561F2372BDB55AA00059248 /* Appetizer.swift */; };
 		C561F23B2BDB5B3500059248 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C561F23A2BDB5B3500059248 /* AppetizerListCell.swift */; };
 		C561F23E2BDB5BD000059248 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C561F23D2BDB5BD000059248 /* NetworkManager.swift */; };
@@ -48,6 +51,9 @@
 /* Begin PBXFileReference section */
 		C501CB652BDB755900FD62C5 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		C501CB672BDB7A7800FD62C5 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		C501CB692BDB88C100FD62C5 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
+		C501CB6B2BDB8E9F00FD62C5 /* ImageLoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadView.swift; sourceTree = "<group>"; };
+		C501CB6D2BDB90B600FD62C5 /* AppetizerDetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailInfoView.swift; sourceTree = "<group>"; };
 		C561F2372BDB55AA00059248 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
 		C561F23A2BDB5B3500059248 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 		C561F23D2BDB5BD000059248 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -106,7 +112,7 @@
 		C561F2392BDB5B1700059248 /* AppetizerViews */ = {
 			isa = PBXGroup;
 			children = (
-				C561F23A2BDB5B3500059248 /* AppetizerListCell.swift */,
+				C501CB6D2BDB90B600FD62C5 /* AppetizerDetailInfoView.swift */,
 			);
 			path = AppetizerViews;
 			sourceTree = "<group>";
@@ -239,6 +245,9 @@
 			children = (
 				C561F2392BDB5B1700059248 /* AppetizerViews */,
 				C5FE563A2BDB4BDE006EC763 /* AppetizerListView.swift */,
+				C561F23A2BDB5B3500059248 /* AppetizerListCell.swift */,
+				C501CB692BDB88C100FD62C5 /* AppetizerDetailView.swift */,
+				C501CB6B2BDB8E9F00FD62C5 /* ImageLoadView.swift */,
 			);
 			path = Appetizer;
 			sourceTree = "<group>";
@@ -376,6 +385,7 @@
 				C501CB682BDB7A7800FD62C5 /* ImageLoader.swift in Sources */,
 				C561F2382BDB55AA00059248 /* Appetizer.swift in Sources */,
 				C561F2412BDB5FF900059248 /* APError.swift in Sources */,
+				C501CB6E2BDB90B600FD62C5 /* AppetizerDetailInfoView.swift in Sources */,
 				C561F23B2BDB5B3500059248 /* AppetizerListCell.swift in Sources */,
 				C561F2432BDB6ACE00059248 /* AppetizerListViewModel.swift in Sources */,
 				C501CB662BDB755900FD62C5 /* Color+Ext.swift in Sources */,
@@ -383,7 +393,9 @@
 				C561F2472BDB744B00059248 /* LoadingView.swift in Sources */,
 				C5FE560F2BDB4B59006EC763 /* AppetizerTabView.swift in Sources */,
 				C561F23E2BDB5BD000059248 /* NetworkManager.swift in Sources */,
+				C501CB6A2BDB88C100FD62C5 /* AppetizerDetailView.swift in Sources */,
 				C5FE560D2BDB4B59006EC763 /* AppetizersApp.swift in Sources */,
+				C501CB6C2BDB8E9F00FD62C5 /* ImageLoadView.swift in Sources */,
 				C561F2452BDB6C8600059248 /* Alert.swift in Sources */,
 				C5FE563B2BDB4BDE006EC763 /* AppetizerListView.swift in Sources */,
 				C5FE56412BDB4C1D006EC763 /* OrderView.swift in Sources */,
