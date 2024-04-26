@@ -22,7 +22,7 @@ struct AppetizerListCell: View {
             
             VStack(alignment:.leading) {
                 Text(appetizer.name)
-                    .font(.title2)
+                    .font(.title3)
                     .fontWeight(.medium)
                 
                 Text("$\(appetizer.price, specifier: "%.2f")")

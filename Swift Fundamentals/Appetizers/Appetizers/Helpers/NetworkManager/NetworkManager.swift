@@ -12,38 +12,44 @@ final class NetworkManager {
     static let baseURL = "https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/"
     private let appetizerURL = baseURL + "appetizers"
     
+    
     private init() {
         
     }
     
     func getAppetizer(completed: @escaping (Result<[Appetizer], APError>) -> Void) {
         guard let url = URL(string: appetizerURL) else {
-            completed(.failure(.InvalidURL))
+            completed(.failure(.invalidURL))
             return
         }
         
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { (data, response, error) in
-            guard let _ = error else {
-                completed(.failure(.UnableToComplete))
+            if error != nil {
+                completed(.failure(.unableToComplete))
                 return
             }
             
             guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-                completed(.failure(.InvalidResponse))
+                completed(.failure(.invalidResponse))
                 return
             }
             
             guard let data = data else {
-                completed(.failure(.InvalidData))
+                completed(.failure(.invalidData))
                 return
             }
+            
+            
+            print(url)
+            print(data)
             
             do {
                 let decoder = JSONDecoder()
                 let decodeRepsonse = try decoder.decode(AppetizerResponse.self, from: data)
                 completed(.success(decodeRepsonse.request))
             } catch {
-                completed(.failure(.InvalidData))
+                print("Decoding Error:", error)
+                completed(.failure(.invalidData))
             }
         }
         

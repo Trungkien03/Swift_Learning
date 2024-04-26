@@ -10,7 +10,7 @@ import Foundation
 struct Appetizer: Codable {
     let id: Int
     let name: String
-    let desription: String
+    let description: String
     let price: Double
     let imageURL: String
     let protein: Int
@@ -25,7 +25,7 @@ struct AppetizerResponse: Decodable {
 struct MockData {
     static let sampleData: Appetizer = Appetizer(id: 1,
                                                     name: "Asian Flank Steak",
-                                                    desription: "This perfectly thin cut just melts in your mouth.",
+                                                    description: "This perfectly thin cut just melts in your mouth.",
                                                     price: 8.99,
                                                     imageURL: "https://seanallen-course-backend.herokuapp.com/images/appetizers/asian-flank-steak.jpg",
                                                     protein: 14,

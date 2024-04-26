@@ -8,8 +8,8 @@
 import Foundation
 
 enum APError: Error {
-    case InvalidURL
-    case InvalidResponse
-    case InvalidData
-    case UnableToComplete
+    case invalidURL
+    case invalidResponse
+    case invalidData
+    case unableToComplete
 }
