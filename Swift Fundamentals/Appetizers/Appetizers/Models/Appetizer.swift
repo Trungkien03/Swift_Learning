@@ -32,5 +32,12 @@ struct MockData {
                                                     calories: 300,
                                                     carbs: 0)
     
-    static let appetizers: [Appetizer] = [sampleData, sampleData]
+    static let appetizers: [Appetizer] = [sampleData, Appetizer(id: 2,
+                                                                name: "Asian Flank Steak",
+                                                                description: "This perfectly thin cut just melts in your mouth.",
+                                                                price: 8.99,
+                                                                imageURL: "https://seanallen-course-backend.herokuapp.com/images/appetizers/asian-flank-steak.jpg",
+                                                                protein: 14,
+                                                                calories: 300,
+                                                                carbs: 0)]
 }

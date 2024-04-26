@@ -32,7 +32,7 @@ struct AppetizerListView: View {
             .blur(radius: isShowingDetailView ? 20 : 0)
             
             if(isShowingDetailView){
-                AppetizerDetailView(appetizer: viewModel.selectedAppetizer ?? MockData.sampleData, isShowingDetailView: $isShowingDetailView)
+                AppetizerDetailView(appetizer: viewModel.selectedAppetizer!, isShowingDetailView: $isShowingDetailView)
             }
             
             if(viewModel.isLoadingData){

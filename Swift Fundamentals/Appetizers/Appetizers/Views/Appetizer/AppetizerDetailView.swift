@@ -10,7 +10,7 @@ import SwiftUI
 struct AppetizerDetailView: View {
     let appetizer: Appetizer
     @Binding var isShowingDetailView: Bool
-    
+    @EnvironmentObject var order: Order
     
     var body: some View {
         VStack {
@@ -22,7 +22,8 @@ struct AppetizerDetailView: View {
             Spacer()
             
             APButtonView(title: "$\(String(format: "%.2f", appetizer.price)) - Add to Order") {
-                print("Tapped")
+                order.add(appetizer)
+                isShowingDetailView = false
             }
             
             
@@ -44,5 +45,5 @@ struct AppetizerDetailView: View {
 
 
 #Preview {
-    AppetizerDetailView(appetizer: MockData.sampleData, isShowingDetailView: .constant(false))
+    AppetizerDetailView(appetizer: MockData.sampleData, isShowingDetailView: .constant(true))
 }

@@ -9,30 +9,50 @@ import SwiftUI
 
 struct OrderView: View {
     
-    @State var orderItems = MockData.appetizers
+    @EnvironmentObject var order: Order
+    @State var isShowingConfirmDialog = false
     
     var body: some View {
         NavigationView {
-            VStack {
-                List() {
-                    ForEach(orderItems, id: \.id) { item in
-                        AppetizerListCell(appetizer: item)
+            ZStack {
+                VStack {
+                    List() {
+                        ForEach(order.orders, id: \.id) { item in
+                            AppetizerListCell(appetizer: item)
+                        }
+                        .onDelete(perform: { indexSet in
+                            order.delete(indexSet)
+                        })
                     }
-                    .onDelete(perform: { indexSet in
-                        orderItems.remove(atOffsets: indexSet)
+                    .listStyle(.grouped)
+                    
+                    APButtonView(title: "$\(order.totalPrice()) - Place Order", action: {
+                        isShowingConfirmDialog = true
                     })
-                }
-                .listStyle(.grouped)
-                
-                APButtonView(title: "$\(99) - Place Order", action: {})
                     .padding()
+                    .alert("Are you sure want to pay?", isPresented: $isShowingConfirmDialog) {
+                        Button("Cancel", role: .cancel) {}
+                        Button("Yes", role: .destructive) {
+                            order.orders.removeAll()
+                        }
+                        
+                    }
+                    
+                }
+                if order.orders.isEmpty {
+                    EmptyViews(imageName: "empty-order", message: "Don't have any orders yet!")
+                }
+                
+                
+                
             }
             .navigationTitle("Orders")
             
         }
     }
+    
 }
 
 #Preview {
-    OrderView()
+    OrderView().environmentObject(Order())
 }
