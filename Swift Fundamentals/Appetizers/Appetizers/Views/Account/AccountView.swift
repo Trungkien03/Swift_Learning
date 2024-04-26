@@ -8,41 +8,46 @@
 import SwiftUI
 
 struct AccountView: View {
-    @State private var firstName = ""
-    @State private var lastName = ""
-    @State private var email = ""
-    @State private var birthDay = Date()
-    @State private var extraNapkin = false
-    @State private var frequentRefills = false
+    @StateObject var modelView = AccountViewModel()
     
     
     var body: some View {
         NavigationView {
             Form(content: {
                 Section(header: Text("Personal Info"), content: {
-                    TextField("First Name", text: $firstName )
-                    TextField("Last Name", text: $lastName)
-                    TextField("Email", text: $email)
+                    TextField("First Name", text: $modelView.user.firstName )
+                    TextField("Last Name", text: $modelView.user.lastName)
+                    TextField("Email", text: $modelView.user.email)
                         .keyboardType(.emailAddress)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
-                    DatePicker("BirthDay", selection: $birthDay, displayedComponents: .date)
+                    DatePicker("BirthDay", selection: $modelView.user.birthDay, displayedComponents: .date)
+                    
                     
                     Button(action: {
-                        print("Save")
+                        modelView.saveChanges()
                     }, label: {
                         Text("Save Changes")
                     })
                 })
                 
                 Section(header: Text("Requests"), content: {
-                    Toggle("Extra Napkins", isOn: $extraNapkin)
-                    Toggle("Frequent Refills", isOn: $frequentRefills)
+                    Toggle("Extra Napkins", isOn: $modelView.user.extraNapkin)
+                    Toggle("Frequent Refills", isOn: $modelView.user.frequentRefills)
                 })
+                .toggleStyle(SwitchToggleStyle(tint: .mainBrandPrimary))
                 
             })
-                .navigationTitle("Accounts")
+            .navigationTitle("Accounts")
         }
+        .onAppear{
+            modelView.retrieveUser()
+        }
+        .alert(item: $modelView.alertItem) { alertItem in
+            Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
+            
+        }
+        
     }
 }
 
