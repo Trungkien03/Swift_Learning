@@ -17,11 +17,14 @@
 		C590791D2BDD6106002D0AE3 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C590791C2BDD6106002D0AE3 /* FirebaseFirestore */; };
 		C590791F2BDD6106002D0AE3 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C590791E2BDD6106002D0AE3 /* FirebaseFirestoreSwift */; };
 		C59079212BDD6106002D0AE3 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C59079202BDD6106002D0AE3 /* FirebaseStorage */; };
-		C59079252BDD64D7002D0AE3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C59079242BDD64D7002D0AE3 /* GoogleService-Info.plist */; };
 		C59079282BDD6666002D0AE3 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59079272BDD6666002D0AE3 /* AuthenticationView.swift */; };
 		C590792A2BDD6746002D0AE3 /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59079292BDD6746002D0AE3 /* SignInEmailView.swift */; };
 		C590792C2BDD68F1002D0AE3 /* AuthenticationManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C590792B2BDD68F1002D0AE3 /* AuthenticationManger.swift */; };
 		C590792E2BDD6CF1002D0AE3 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C590792D2BDD6CF1002D0AE3 /* RootView.swift */; };
+		C59079312BDDF74B002D0AE3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C59079302BDDF74B002D0AE3 /* GoogleService-Info.plist */; };
+		C59079332BDDF82F002D0AE3 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = C59079322BDDF82F002D0AE3 /* GoogleSignIn */; };
+		C59079352BDDF82F002D0AE3 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C59079342BDDF82F002D0AE3 /* GoogleSignInSwift */; };
+		C59079382BDDFBFC002D0AE3 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59079372BDDFBFC002D0AE3 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,11 +55,12 @@
 		C59079042BDCEDB4002D0AE3 /* SwiftUIFirebaseBootcampUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIFirebaseBootcampUITests.swift; sourceTree = "<group>"; };
 		C59079062BDCEDB4002D0AE3 /* SwiftUIFirebaseBootcampUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIFirebaseBootcampUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C59079172BDD60C2002D0AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		C59079242BDD64D7002D0AE3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C59079272BDD6666002D0AE3 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		C59079292BDD6746002D0AE3 /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
 		C590792B2BDD68F1002D0AE3 /* AuthenticationManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManger.swift; sourceTree = "<group>"; };
 		C590792D2BDD6CF1002D0AE3 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		C59079302BDDF74B002D0AE3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C59079372BDDFBFC002D0AE3 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +68,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C59079332BDDF82F002D0AE3 /* GoogleSignIn in Frameworks */,
 				C59079192BDD6106002D0AE3 /* FirebaseAuth in Frameworks */,
 				C590791D2BDD6106002D0AE3 /* FirebaseFirestore in Frameworks */,
+				C59079352BDDF82F002D0AE3 /* GoogleSignInSwift in Frameworks */,
 				C59079212BDD6106002D0AE3 /* FirebaseStorage in Frameworks */,
 				C590791F2BDD6106002D0AE3 /* FirebaseFirestoreSwift in Frameworks */,
 			);
@@ -112,9 +118,10 @@
 		C59078E82BDCEDB4002D0AE3 /* SwiftUIFirebaseBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				C59079362BDDFBEE002D0AE3 /* Utilities */,
 				C59079262BDD664F002D0AE3 /* Authentication */,
 				C59079172BDD60C2002D0AE3 /* Info.plist */,
-				C59079242BDD64D7002D0AE3 /* GoogleService-Info.plist */,
+				C59079302BDDF74B002D0AE3 /* GoogleService-Info.plist */,
 				C59078E92BDCEDB4002D0AE3 /* SwiftUIFirebaseBootcampApp.swift */,
 				C59078ED2BDCEDB4002D0AE3 /* Assets.xcassets */,
 				C59078EF2BDCEDB4002D0AE3 /* Preview Content */,
@@ -165,6 +172,14 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		C59079362BDDFBEE002D0AE3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C59079372BDDFBFC002D0AE3 /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,6 +201,8 @@
 				C590791C2BDD6106002D0AE3 /* FirebaseFirestore */,
 				C590791E2BDD6106002D0AE3 /* FirebaseFirestoreSwift */,
 				C59079202BDD6106002D0AE3 /* FirebaseStorage */,
+				C59079322BDDF82F002D0AE3 /* GoogleSignIn */,
+				C59079342BDDF82F002D0AE3 /* GoogleSignInSwift */,
 			);
 			productName = SwiftUIFirebaseBootcamp;
 			productReference = C59078E62BDCEDB4002D0AE3 /* SwiftUIFirebaseBootcamp.app */;
@@ -261,6 +278,7 @@
 			mainGroup = C59078DD2BDCEDB3002D0AE3;
 			packageReferences = (
 				C59079152BDD5FD4002D0AE3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C590792F2BDDF6AD002D0AE3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = C59078E72BDCEDB4002D0AE3 /* Products */;
 			projectDirPath = "";
@@ -279,8 +297,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C59078F12BDCEDB4002D0AE3 /* Preview Assets.xcassets in Resources */,
+				C59079312BDDF74B002D0AE3 /* GoogleService-Info.plist in Resources */,
 				C59078EE2BDCEDB4002D0AE3 /* Assets.xcassets in Resources */,
-				C59079252BDD64D7002D0AE3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C59079382BDDFBFC002D0AE3 /* Utilities.swift in Sources */,
 				C590792C2BDD68F1002D0AE3 /* AuthenticationManger.swift in Sources */,
 				C59078EA2BDCEDB4002D0AE3 /* SwiftUIFirebaseBootcampApp.swift in Sources */,
 				C59079282BDD6666002D0AE3 /* AuthenticationView.swift in Sources */,
@@ -651,6 +670,14 @@
 				minimumVersion = 10.24.0;
 			};
 		};
+		C590792F2BDDF6AD002D0AE3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -673,6 +700,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C59079152BDD5FD4002D0AE3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		C59079322BDDF82F002D0AE3 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C590792F2BDDF6AD002D0AE3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		C59079342BDDF82F002D0AE3 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C590792F2BDDF6AD002D0AE3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

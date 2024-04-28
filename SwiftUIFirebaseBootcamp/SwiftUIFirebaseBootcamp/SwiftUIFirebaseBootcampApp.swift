@@ -7,6 +7,9 @@
 
 import SwiftUI
 import Firebase
+import FirebaseCore
+import FirebaseAuth
+import GoogleSignIn
 
 @main
 struct SwiftUIFirebaseBootcampApp: App {
